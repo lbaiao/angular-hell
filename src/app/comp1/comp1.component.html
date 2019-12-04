@@ -1,0 +1,12 @@
+<form [formGroup]="comp1Form">
+    <div>
+        Campo1-Parent: 
+        <input type="text" formControlName="campo1">
+    </div>
+    <app-comp2></app-comp2>
+    <button (click)="onPush()">Push data</button>
+    <button (click)="getJsonFullData()">Get JSON</button>
+    <!-- <div>
+        <button (click)="printComp2Prop()">print prop comp2</button>
+    </div> -->
+</form>
